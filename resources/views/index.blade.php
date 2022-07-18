@@ -22,18 +22,9 @@
 
             <div class="nav-scroller py-1 mb-2">
                 <nav class="nav d-flex justify-content-between">
-                    <a class="p-2 link-secondary link-category" href="#">World</a>
-                    <a class="p-2 link-secondary link-category" href="#">U.S.</a>
-                    <a class="p-2 link-secondary link-category" href="#">Technology</a>
-                    <a class="p-2 link-secondary link-category" href="#">Design</a>
-                    <a class="p-2 link-secondary link-category" href="#">Culture</a>
-                    <a class="p-2 link-secondary link-category" href="#">Business</a>
-                    <a class="p-2 link-secondary link-category" href="#">Politics</a>
-                    <a class="p-2 link-secondary link-category" href="#">Opinion</a>
-                    <a class="p-2 link-secondary link-category" href="#">Science</a>
-                    <a class="p-2 link-secondary link-category" href="#">Health</a>
-                    <a class="p-2 link-secondary link-category" href="#">Style</a>
-                    <a class="p-2 link-secondary link-category" href="#">Travel</a>
+                    @foreach ($categories as $category)
+                        <a class="p-2 link-secondary link-category" href="{{ $category->slug }}">{{ $category->name }}</a>
+                    @endforeach
                 </nav>
             </div>
         </div>
