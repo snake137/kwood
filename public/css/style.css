@@ -1,0 +1,16 @@
+body {
+    font-family: Roboto, sans-serif;
+    font-size: 14px;
+}
+
+.blog-header-logo {
+    font-size: 26px;
+    font-weight: 700;
+    text-decoration: none;
+}
+
+.link-category {
+    font-size: 16px;
+    font-weight: 500;
+    text-decoration: none;
+}
