@@ -41,6 +41,7 @@ class BlogController extends Controller
         $categories = Category::all();
 
         $post = Post::query()
+            ->with('user')
             ->where('slug', '=', $slug)
             ->get();
 

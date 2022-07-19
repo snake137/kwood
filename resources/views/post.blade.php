@@ -13,6 +13,15 @@
                     <div class="blog-post">
                        {{ $data->text }}
                     </div>
+
+                    <div class="row flex-nowrap justify-content-between align-items-center mt-3">
+                        <div class="col-4 text-left">
+                            <p>Автор: {{ $data->user['name'] }}</p>
+                        </div>
+                        <div class="col-4 text-right">
+                            <p>{{ $data->views }} просмотров</p>
+                        </div>
+                    </div>
                     @endforeach
                 </div>
 
