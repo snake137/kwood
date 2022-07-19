@@ -35,4 +35,18 @@ class BlogController extends Controller
             'posts' => $posts
         ]);
     }
+
+    public function getPost($slug)
+    {
+        $categories = Category::all();
+
+        $post = Post::query()
+            ->where('slug', '=', $slug)
+            ->get();
+
+        return view('post', [
+            'categories' => $categories,
+            'post' => $post
+        ]);
+    }
 }

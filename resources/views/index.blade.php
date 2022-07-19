@@ -14,7 +14,7 @@
                                         <p class="card-text">{{ $post->name }}</p>
                                         <div class="d-flex justify-content-between align-items-center">
                                             <div class="btn-group">
-                                                <a href="/" type="button" class="btn btn-sm btn-outline-secondary">Читать полностью</a>
+                                                <a href="/post/{{ $post->slug }}" type="button" class="btn btn-sm btn-outline-secondary">Читать полностью</a>
                                             </div>
                                             <small class="text-muted">Просмотров {{ $post->views }}</small>
                                         </div>

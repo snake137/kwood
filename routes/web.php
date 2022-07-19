@@ -16,3 +16,4 @@ use Illuminate\Support\Facades\Route;
 
 Route::get('/', [BlogController::class, 'index']);
 Route::get('/category/{slug}', [BlogController::class, 'getCategoryPosts']);
+Route::get('/post/{slug}', [BlogController::class, 'getPost']);
