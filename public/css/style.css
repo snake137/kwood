@@ -14,3 +14,8 @@ body {
     font-weight: 500;
     text-decoration: none;
 }
+
+.post-img {
+    max-width: 420px;
+    max-height: 300px;
+}
